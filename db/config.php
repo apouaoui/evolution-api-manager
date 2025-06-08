@@ -1,10 +1,10 @@
 <?php
 
 // Detalhes da conexão ao banco de dados
-$servername = getenv("DB_SERVER");
-$username = getenv("DB_USERNAME");
-$password = getenv("DB_PASSWORD");
-$dbname = getenv("DB_NAME");
+$servername = "127.0.0.1"; // força uso de TCP
+$username = "arthurp_evolution_api_manager";
+$password = "Password@01";
+$dbname = "arthurp_evolution_api_manager";
 
 // Opções de PDO (opcional)
 $options = [
@@ -15,10 +15,10 @@ $options = [
 try {
     // Criar conexão PDO
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, $options);
+    echo "Conexão bem-sucedida!";
 } catch (PDOException $e) {
     // Exibir mensagem de erro
     echo "Falha na conexão: " . $e->getMessage();
     die();
 }
-
 ?>
