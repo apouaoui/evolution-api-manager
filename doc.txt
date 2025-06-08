@@ -1,0 +1,16 @@
+Criar banco de dados para o manager
+Ir até o terminal console
+Digitar o comando abaixo para acessar o diretório da evolution API:
+cd /www/wwwroot/api.seusite.com/
+
+Agora vamos clonar o diretório do GitHub:
+git clone https://github.com/thiagociavolela/manager1.2 manager
+
+Aguarde fazer a clonagem.
+Agora vamos criar o banco de dados no aapanel e ir até os arquivos da pasta manager dentro da evolution API, baixe o arquivo .sql lá e depois importe para o seu banco de dados.
+Agora vá até a pasta db e configure as informações do seu banco de dados.
+Atenção: apague 'getenv' e adicione suas informações de banco de dados, após isso, salve.
+Vá até o banco de dados no phpMyAdmin, navegue até a tabela contas e altere o email do super admin para admin@admin.com.
+Senha: cursodev
+Agora, para acessar o manager, vá para api.seusite/manager.
+Faça login com as credenciais padrão e pronto, você já pode acessar seu manager da API.
